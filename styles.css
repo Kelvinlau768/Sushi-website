@@ -1,0 +1,1878 @@
+@import url('https://fonts.googleapis.com/css2?family=Ravi+Prakash&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;1,300;1,400&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: rgb(245, 245, 245);
+    font-family: 'Roboto', sans-serif;
+    overflow-x: hidden;
+}
+
+a:active {
+    text-decoration: none;
+    color: black;
+}
+
+a:link {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    text-decoration: none;
+    color: black;
+}
+
+a:visited {
+    text-decoration: none;
+    color: black;
+}
+
+@media screen and (max-width: 670px) {
+    .navbar {
+        display: flex;
+        padding: 0px 30px;
+        background-color: white;
+        position: sticky;
+        top: 0;
+        z-index: 2;
+        box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.1);
+    }
+    
+    .navbar .navigation-left {
+        width: 50%;
+        display: flex;
+        align-items: center;
+    }
+    
+    .navbar .navigation-left p {
+        font-size: 15px;
+        margin: 5px 20px;
+    }
+    
+    .navbar .navigation-toggle {
+        width: 50%;
+        display: flex;
+        justify-content: end;
+        align-items: center;
+    }
+
+    .navbar .navigation-toggle .toggle {
+        background-color: transparent;
+        border: none;
+        font-size: 35px;
+    }
+
+    .navbar .navigation-toggle .toggle:hover {
+        border-radius: 50%;
+        padding: 7px 10px;
+        background-color: rgb(231, 231, 231);
+    }
+    
+    .navbar .navigation-right {
+        display: none;
+    }
+    
+    .navbar ul li {
+        list-style: none;
+        margin: 0px 30px;
+        font-size: 15px;
+    }
+    
+    .navbar .contact-us {
+        border: 2px solid orange;
+        padding: 5px 10px;
+        color: orange;
+        border-radius: 5px;
+    }
+
+    .toggleBar {
+        font-size: 30px;
+        background-color: white;
+        display: none;
+    }
+
+    .toggleBar ul li {
+        display: flex;
+        justify-content: center;
+        padding: 10px 5px;
+        box-shadow: 0px 1px 1px rgba(0, 0, 2, 0.1);
+    }
+    
+    .container {
+        font-family: 'Ravi Prakash', cursive;
+        margin: 80px 30px 50px 30px;
+    }
+    
+    .header {
+        width: 100%;
+    }
+    
+    .header .title {
+        width: 100%;
+        font-size: 80px;
+        line-height: 60px;
+    }
+    
+    .header .description {
+        width: 100%;
+        font-size: 19px;
+        line-height: 25px;
+        font-family: 'Roboto', sans-serif;
+        opacity: 0.8;
+        margin-top: 25px;
+        margin-bottom: 75px;
+    }
+    
+    .containerBtn {
+        display: flex;
+    }
+    
+    .container button {
+        border: none;
+        background-color: transparent;
+    }
+    
+    .reservation {
+        position: relative;
+    }
+    
+    .brush {
+        width: 150px;
+        margin-top: 10px;
+    }
+
+    .circle {
+        width: 100%;
+        margin-top: 100px
+    }
+    
+    .reservationBtn {
+        font-size: 18px;
+        position: absolute;
+        left: 23px;
+        top: 27px;
+        font-style: italic;
+        font-weight: 600;
+    }
+
+    .reservationBtn:hover {
+        color: white;
+    }
+    
+    .howBtn {
+        font-size: 16px;
+    }
+    
+    .bi-play-circle-fill {
+        font-size: 40px;
+        margin-left: 75px;
+        margin-right: 10px;
+    }
+    
+    .howBtn:hover {
+        color: red;
+    }
+    
+    .bi-play-circle-fill:hover {
+        color: red;
+    }
+    
+    .aboutUs {
+        margin-top: 150px;
+    }
+    
+    .aboutUsImages {
+        position: relative;
+    }
+    
+    .aboutUsImages .salmonTexture {
+        width: 300px;
+        height: 500px;
+        margin-left: 50px;
+        border-radius: 15px;
+    }
+    
+    .aboutUsImages .chickenKatsu {
+        position: absolute;
+        width: 400px;
+        top: 100px;
+        left: 50px;
+    }
+    
+    .aboutUsDescription {
+        margin: 70px 50px 0 50px;
+    }
+    
+    .aboutUsDescription .title {
+        margin: 80px 0 50px 0;
+        font-family: 'Ravi Prakash', cursive;
+        font-size: 100px;
+        line-height: 70px;
+    }
+
+    @keyframes example {
+        0%   {opacity: 0;}
+        100% {opacity: 1;}
+    }
+    
+    .aboutUsDescription .description {
+        font-size: 19px;
+        line-height: 30px;
+    }
+    
+    .japanese {
+        color: orange;
+        font-size: 20px;
+        font-weight: 500;
+        font-family: 'Roboto', sans-serif;
+    }
+    
+    .sushiMenu {
+        margin-top: 150px;
+    }
+    
+    .sushiMenuImages {
+        position: relative;
+        text-align: right;
+        margin: 100px 50px 200px 0px;
+    }
+    
+    .sushiMenuImages .salmonTexture {
+        width: 300px;
+        height: 500px;
+        border-radius: 15px;
+    }
+    
+    .sushiMenuImages .udon {
+        position: absolute;
+        width: 400px;
+        top: 100px;
+        right: 0px;
+    }
+    
+    .sushiMenuDescription {
+        margin: 70px 50px 0 50px;
+    }
+    
+    .sushiMenuDescription .title {
+        margin: 80px 0 50px 0;
+        font-family: 'Ravi Prakash', cursive;
+        font-size: 100px;
+        line-height: 70px;
+    }
+    
+    .sushiMenuDescription .description {
+        font-size: 19px;
+        line-height: 30px;
+    }
+    
+    .categories .japanese, .categories .title{
+        text-align: center;
+    }
+    
+    .categories .japanese {
+        margin-top: 100px;
+    }
+    
+    .categories .title {
+        font-size: 60px;
+        margin: 25px 10px 0 10px;
+        line-height: 50px;
+        font-family: 'Ravi Prakash', cursive;
+    }
+    
+    .categories-menu {
+        margin: 0 20px;
+    }
+
+    .menu {
+        width: 800px;
+    }
+    
+    .menu ul {
+        display: flex;
+        gap: 30px;
+        margin-top: 20px;
+    }
+
+    .menu ul li {
+        list-style: none;
+        font-size: 18px;
+    }
+    
+    .menu ul li:hover {
+        color: orange;
+        cursor: pointer;
+    }
+    
+    .menuContainer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .menu-container {
+        margin-top: 50px;
+        display: grid;
+        row-gap: 50px;
+        gap: 40px;
+        margin-left: 10px;
+        grid-template-columns: 1fr 1fr;
+    }
+    
+    .foodContainer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 50px;
+        background-color: rgb(255, 98, 0);
+        border-radius: 5px;
+        max-width: 380px;
+    }
+    
+    .menuBorder {
+        width: 100%;
+        max-width: 330px;
+        height: 80px;
+        background-image: url('images/Ramen\ Wallpaper.jpg');
+        background-position: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .menuBorder p {
+        color: black;
+        background-color: white;
+        padding: 2px 5px;
+        font-size: 20px;
+        font-weight: 600;
+    }
+
+    .dish {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: rgb(248, 248, 248);
+        margin: 0px 0px 30px 0px;
+        max-width: 250px;
+    }
+
+    .dish:hover {
+        background-color: white;
+        border-radius: 30px;
+    }
+    
+    .dish p {
+        font-size: 18px;
+        font-weight: 500;
+    }
+    
+    .dish .price {
+        padding-bottom: 50px;
+        color: orange;
+    }
+    
+    .dish .dishName {
+        padding-bottom: 10px;
+    }
+    
+    .dish img {
+        margin-top: 30px;
+        margin-bottom: 10px;
+        width: 80%;
+    }
+    
+    .menuBtn {
+        background-color: rgb(255, 51, 0);
+        border: 2px solid white;
+        color: white;
+        border-radius: 10px;
+        margin-top: 20px;
+        padding: 15px 20px;
+        font-size: 17px;
+        font-weight: 500;
+        cursor: pointer;
+    }
+
+    .menuBtn:hover {
+        opacity: 0.7;
+    }
+    
+    .footer {
+        background-image: url('images/dragon.jpg');
+        background-repeat: no-repeat;
+        background-size: 200%;
+        margin-top: 100px;
+        height: 300px;
+        text-align: center;
+        color: white;
+        opacity: 1;
+        padding: 50px 0;
+    }
+
+    .footer .japanese {
+        background-color: white;
+        margin: 0 100px;
+    }
+    
+    .footer .title {
+        font-size: 20px;
+        text-align: center;
+        margin: 30px 0;
+    }
+    
+    .footer .description {
+        font-size: 20px;
+        margin: 0 70px;
+        text-align: center;
+    }
+    
+    .contactUsBtn {
+        border: 3px solid black;
+        border-radius: 10px;
+        margin-top: 20px;
+        padding: 10px 20px;
+        font-size: 15px;
+        font-weight: 600;
+        font-style: italic;
+        color: black;
+        background-color: white;
+    }
+    
+    .footerNavigationBar {
+        background-color: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        padding: 70px 0 20px 0;
+        font-size: 20px;
+    }
+
+    .footerNavigationBar .topNavBar .navigation-right {
+        display: none;
+    }
+
+    .footerNavigationBar .topNavBar .navigation-left {
+        display: flex;
+        font-size: 25px;
+        justify-content: center;
+        align-items: center;
+        font-weight: 6000;
+        gap: 25px;
+    }
+
+    .footerNavigationBar .bottomNavBar .navigation-right ul {
+        display: flex;
+        font-size: 15px;
+        gap: 20px;
+        justify-content: flex-end;
+        margin-right: -60px;
+        margin-top: 80px;
+    }
+
+    .footerNavigationBar .bottomNavBar .navigation-left {
+        font-size: 15px;
+        margin: 10px 0;
+    }
+    
+    .footerNavigationBar .topNavBar ul li, 
+    .footerNavigationBar .bottomNavBar ul li {
+        list-style: none;
+    }
+
+
+
+}
+
+
+@media screen and (min-width: 671px) and (max-width: 990px) {
+    .navbar {
+        display: flex;
+        padding: 0px 50px;
+        background-color: white;
+        position: sticky;
+        top: 0;
+        z-index: 2;
+        box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.1);
+    }
+    
+    .navbar .navigation-left {
+        width: 50%;
+        display: flex;
+        align-items: center;
+    }
+    
+    .navbar .navigation-left p {
+        font-size: 15px;
+        margin: 5px 20px;
+    }
+    
+    .navbar .navigation-toggle {
+        width: 50%;
+        display: flex;
+        justify-content: end;
+        align-items: center;
+    }
+
+    .navbar .navigation-toggle .toggle {
+        background-color: transparent;
+        border: none;
+        font-size: 35px;
+    }
+
+    .navbar .navigation-toggle .toggle:hover {
+        border-radius: 50%;
+        padding: 7px 11px;
+        background-color: rgb(231, 231, 231);
+    }
+    
+    .navbar .navigation-right {
+        display: none;
+    }
+    
+    .navbar ul li {
+        list-style: none;
+        margin: 0px 30px;
+        font-size: 15px;
+    }
+    
+    .navbar .contact-us {
+        border: 2px solid orange;
+        padding: 5px 10px;
+        color: orange;
+        border-radius: 5px;
+    }
+    
+    
+    .toggleBar {
+        font-size: 30px;
+        background-color: white;
+        display: none;
+    }
+
+    .toggleBar ul li {
+        display: flex;
+        justify-content: center;
+        padding: 10px 5px;
+        box-shadow: 0px 1px 1px rgba(0, 0, 2, 0.1);
+    }
+    
+    .container {
+        font-family: 'Ravi Prakash', cursive;
+        margin: 80px 30px 50px 30px;
+    }
+    
+    .header {
+        width: 100%;
+    }
+    
+    .header .title {
+        width: 100%;
+        font-size: 80px;
+        line-height: 60px;
+    }
+    
+    .header .description {
+        width: 60%;
+        font-size: 19px;
+        line-height: 25px;
+        font-family: 'Roboto', sans-serif;
+        opacity: 0.8;
+        margin-top: 25px;
+        margin-bottom: 75px;
+    }
+    
+    .containerBtn {
+        display: flex;
+    }
+    
+    .container button {
+        border: none;
+        background-color: transparent;
+    }
+    
+    .reservation {
+        position: relative;
+    }
+    
+    .brush {
+        width: 150px;
+        margin-top: 10px;
+    }
+
+    .circle {
+        width: 100%;
+        margin-top: 100px
+    }
+    
+    .reservationBtn {
+        font-size: 20px;
+        position: absolute;
+        left: 20px;
+        top: 24px;
+        font-style: italic;
+    }
+
+    .reservationBtn:hover {
+        color: white;
+    }
+    
+    .howBtn {
+        font-size: 18px;
+    }
+    
+    .bi-play-circle-fill {
+        font-size: 40px;
+        margin-left: 75px;
+        margin-right: 10px;
+    }
+    
+    .howBtn:hover {
+        font-size: 18px;
+        color: red;
+    }
+    
+    .bi-play-circle-fill:hover {
+        color: red;
+    }
+    
+    .aboutUs {
+        margin-top: 150px;
+    }
+    
+    .aboutUsImages {
+        position: relative;
+    }
+    
+    .aboutUsImages .salmonTexture {
+        width: 300px;
+        height: 500px;
+        margin-left: 50px;
+        border-radius: 15px;
+    }
+    
+    .aboutUsImages .chickenKatsu {
+        position: absolute;
+        width: 400px;
+        top: 100px;
+        left: 50px;
+    }
+    
+    .aboutUsDescription {
+        margin: 70px 50px 0 50px;
+    }
+    
+    .aboutUsDescription .title {
+        margin: 80px 0 50px 0;
+        font-family: 'Ravi Prakash', cursive;
+        font-size: 100px;
+        line-height: 70px;
+    }
+
+    @keyframes example {
+        0%   {opacity: 0;}
+        100% {opacity: 1;}
+    }
+    
+    .aboutUsDescription .description {
+        font-size: 19px;
+        line-height: 30px;
+    }
+    
+    .japanese {
+        color: orange;
+        font-size: 20px;
+        font-weight: 500;
+        font-family: 'Roboto', sans-serif;
+    }
+    
+    .sushiMenu {
+        margin-top: 150px;
+    }
+    
+    .sushiMenuImages {
+        position: relative;
+        text-align: right;
+        margin: 100px 50px 200px 0px;
+    }
+    
+    .sushiMenuImages .salmonTexture {
+        width: 300px;
+        height: 500px;
+        border-radius: 15px;
+    }
+    
+    .sushiMenuImages .udon {
+        position: absolute;
+        width: 400px;
+        top: 100px;
+        right: 0px;
+    }
+    
+    .sushiMenuDescription {
+        margin: 70px 50px 0 50px;
+    }
+    
+    .sushiMenuDescription .title {
+        margin: 80px 0 50px 0;
+        font-family: 'Ravi Prakash', cursive;
+        font-size: 100px;
+        line-height: 70px;
+    }
+    
+    .sushiMenuDescription .description {
+        font-size: 19px;
+        line-height: 30px;
+    }
+    
+    .categories .japanese, .categories .title{
+        text-align: center;
+    }
+    
+    .categories .japanese {
+        margin-top: 100px;
+    }
+    
+    .categories .title {
+        margin-top: 25px;
+        font-size: 60px;
+        line-height: 50px;
+        font-family: 'Ravi Prakash', cursive;
+    }
+    
+    .categories-menu {
+        margin: 0;
+    }
+
+    
+    .menu ul {
+        display: flex;
+        gap: 30px;
+        margin-top: 20px;
+        justify-content: center;
+    }
+
+    .menu ul li {
+        list-style: none;
+        font-size: 18px;
+    }
+    
+    .menu ul li:hover {
+        color: orange;
+        cursor: pointer;
+    }
+    
+    .menuContainer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .menu-container {
+        margin-top: 50px;
+        display: grid;
+        row-gap: 50px;
+        gap: 40px;
+        margin-left: 10px;
+        grid-template-columns: 1fr 1fr;
+    }
+    
+    .foodContainer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 300px;
+        height: 100px;
+        border-radius: 5px;
+    }
+    
+    .menuBorder {
+        width: 300px;
+        height: 100px;
+        background-image: url('images/Ramen\ Wallpaper.jpg');
+        background-position: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .menuBorder p {
+        color: black;
+        background-color: white;
+        padding: 2px 5px;
+        font-size: 20px;
+        font-weight: 600;
+    }
+
+    .dish {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: rgb(248, 248, 248);
+        margin: -20px 0px 30px 0px;
+        width: 300px;
+    }
+
+    .dish:hover {
+        background-color: white;
+        border-radius: 20px;
+    }
+    
+    .dish p {
+        font-size: 18px;
+        font-weight: 500;
+    }
+    
+    .dish .price {
+        padding-bottom: 50px;
+        color: orange;
+    }
+    
+    .dish .dishName {
+        padding-bottom: 10px;
+    }
+    
+    .dish img {
+        margin-top: 30px;
+        margin-bottom: 10px;
+        width: 80%;
+    }
+    
+    .menuBtn {
+        background-color: rgb(255, 51, 0);
+        border: 2px solid white;
+        color: white;
+        border-radius: 10px;
+        margin-top: 20px;
+        padding: 15px 20px;
+        font-size: 17px;
+        font-weight: 500;
+        cursor: pointer;
+    }
+
+    .menuBtn:hover {
+        opacity: 0.7;
+    }
+    
+    .footer {
+        background-image: url('images/dragon.jpg');
+        background-repeat: no-repeat;
+        background-size: 200%;
+        background-attachment: fixed;
+        margin-top: 100px;
+        height: 300px;
+        text-align: center;
+        color: white;
+        opacity: 1;
+        padding: 50px 0;
+    }
+
+    .footer .japanese {
+        background-color: white;
+        margin: 0 200px;
+    }
+    
+    .footer .title {
+        font-size: 20px;
+        text-align: center;
+        margin: 30px 0;
+    }
+    
+    .footer .description {
+        font-size: 20px;
+        margin: 0 70px;
+        text-align: center;
+    }
+    
+    .contactUsBtn {
+        border: 3px solid black;
+        border-radius: 10px;
+        margin-top: 20px;
+        padding: 10px 20px;
+        font-size: 15px;
+        font-weight: 600;
+        font-style: italic;
+        color: black;
+    }
+    
+    .footerNavigationBar {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        padding: 70px 0 20px 0;
+        font-size: 20px;
+        background-color: white;
+    }
+
+    .footerNavigationBar .topNavBar .navigation-right {
+        display: none;
+    }
+
+    .footerNavigationBar .topNavBar .navigation-left {
+        display: flex;
+        font-size: 25px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .footerNavigationBar .bottomNavBar .navigation-right ul {
+        display: flex;
+        font-size: 15px;
+        gap: 20px;
+        justify-content: flex-end;
+        margin-right: -150px;
+        margin-top: 80px;
+    }
+
+    .footerNavigationBar .bottomNavBar .navigation-left {
+        font-size: 15px;
+        margin: 10px 0;
+    }
+    
+    .footerNavigationBar .topNavBar ul li, 
+    .footerNavigationBar .bottomNavBar ul li {
+        list-style: none;
+    }
+
+
+
+}
+
+
+@media screen and (min-width: 991px) and (max-width: 1550px) {
+    .navigation-toggle, .toggleContainer {
+        display: none;
+    }
+    
+    .navbar {
+        display: flex;
+        align-items: center;
+        padding: 10px 50px;
+        margin-bottom: 30px;
+        background-color: white;
+        position: sticky;
+        top: 0;
+        z-index: 2;
+        box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.1);
+    }
+    
+    .navbar .navigation-left {
+        width: 30%;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+    }
+    
+    .navbar .navigation-left p {
+        font-size: 20px;
+        margin: 5px 20px;
+    }
+    
+    .navbar .navigation-right {
+        width: 70%;
+    }
+    
+    .navbar .navigation-right ul {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 400;
+        font-style: italic;
+    }
+    
+    .navbar ul li {
+        list-style: none;
+        margin: 5px 20px;
+        font-size: 17px;
+    }
+    
+    .navbar .contact-us {
+        border: 2px solid orange;
+        padding: 5px 10px;
+        color: orange;
+        border-radius: 5px;
+    }
+    
+    .container {
+        display: flex;
+        font-family: 'Ravi Prakash', cursive;
+    }
+    
+    .header {
+        width: 55%;
+        margin-left: 100px;
+        margin-top: 150px;
+    }
+    
+    .header .title {
+        width: 100%;
+        font-size: 100px;
+        line-height: 70px;
+    }
+    
+    .header .description {
+        width: 60%;
+        font-size: 17px;
+        line-height: 21px;
+        font-family: 'Roboto', sans-serif;
+        opacity: 0.8;
+        margin-top: 35px;
+        margin-bottom: 100px;
+    }
+    
+    .containerBtn {
+        display: flex;
+    }
+    
+    .container button {
+        border: none;
+        background-color: transparent;
+    }
+    
+    .reservation {
+        position: relative;
+    }
+    
+    .brush {
+        width: 200px;
+    }
+
+    .circle {
+        width: 100%;
+    }
+    
+    .reservationBtn {
+        font-size: 20px;
+        position: absolute;
+        left: 45px;
+        top: 23px;
+        font-style: italic;
+    }
+
+    .reservationBtn:hover {
+        color: white;
+    }
+    
+    .howBtn {
+        font-size: 18px;
+    }
+    
+    .bi-play-circle-fill {
+        font-size: 40px;
+        margin-left: 75px;
+        margin-right: 10px;
+    }
+    
+    .howBtn:hover {
+        font-size: 18px;
+        color: red;
+    }
+    
+    .bi-play-circle-fill:hover {
+        color: red;
+    }
+    
+    .aboutUs {
+        margin-top: 150px;
+        display: flex;
+    }
+    
+    .aboutUsImages {
+        position: relative;
+    }
+    
+    .aboutUsImages .salmonTexture {
+        width: 300px;
+        height: 500px;
+        margin-left: 50px;
+        border-radius: 15px;
+    }
+    
+    .aboutUsImages .chickenKatsu {
+        position: absolute;
+        width: 400px;
+        top: 100px;
+        left: 50px;
+    }
+    
+    .aboutUsDescription {
+        margin: 0px 50px 0 120px;
+    }
+    
+    .aboutUsDescription .title {
+        margin: 50px 0 10px 0;
+        font-family: 'Ravi Prakash', cursive;
+        font-size: 100px;
+        line-height: 70px;
+    }
+
+    @keyframes example {
+        0%   {opacity: 0;}
+        100% {opacity: 1;}
+    }
+    
+    .aboutUsDescription .description {
+        font-size: 19px;
+        line-height: 30px;
+    }
+    
+    .japanese {
+        color: orange;
+        font-size: 20px;
+        font-weight: 500;
+        font-family: 'Roboto', sans-serif;
+    }
+    
+    .sushiMenu {
+        margin-top: 150px;
+        display: flex;
+    }
+    
+    .sushiMenuImages {
+        position: relative;
+        margin-right: 50px;
+    }
+    
+    .sushiMenuImages .salmonTexture {
+        width: 300px;
+        height: 500px;
+        border-radius: 15px;
+    }
+    
+    .sushiMenuImages .udon {
+        position: absolute;
+        width: 400px;
+        top: 100px;
+        right: 0px;
+    }
+    
+    .sushiMenuDescription {
+        margin: 0px 50px 0 50px;
+    }
+    
+    .sushiMenuDescription .title {
+        margin: 50px 0 20px 0;
+        font-family: 'Ravi Prakash', cursive;
+        font-size: 100px;
+        line-height: 70px;
+    }
+    
+    .sushiMenuDescription .description {
+        font-size: 19px;
+        line-height: 30px;
+    }
+    
+    .categories .japanese, .categories .title{
+        text-align: center;
+    }
+    
+    .categories .japanese {
+        margin-top: 100px;
+    }
+    
+    .categories .title {
+        font-size: 80px;
+        font-family: 'Ravi Prakash', cursive;
+    }
+    
+    .categories-menu {
+        margin: 0;
+    }
+    
+    .menu ul {
+        display: flex;
+        justify-content: center;
+        gap: 80px;
+    }
+
+    .menu ul li {
+        list-style: none;
+        font-size: 25px;
+        margin-top: 50px;
+    }
+    
+    .menu ul li:hover {
+        color: orange;
+        cursor: pointer;
+    }
+    
+    .menuContainer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .menu-container {
+        margin-top: 50px;
+        display: grid;
+        gap: 60px;
+        row-gap: 100px;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    
+    .foodContainer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 280px;
+        height: 100px;
+        border-radius: 10px;
+    }
+    
+    .menuBorder {
+        width: 280px;
+        height: 100px;
+        background-image: url('images/Ramen\ Wallpaper.jpg');
+        background-position: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .menuBorder p {
+        color: black;
+        background-color: white;
+        padding: 2px 5px;
+        font-size: 20px;
+        font-weight: 600;
+    }
+
+    .dish {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: rgb(248, 248, 248);
+        margin: -20px 0 0 0;
+        width: 280px;
+    }
+
+    .dish:hover {
+        background-color: white;
+        border-radius: 20px;
+    }
+    
+    .dish p {
+        font-size: 25px;
+        font-weight: 500;
+    }
+    
+    .dish .price {
+        padding-bottom: 50px;
+        color: orange;
+    }
+    
+    .dish .dishName {
+        padding-bottom: 10px;
+    }
+    
+    .dish img {
+        margin-top: 50px;
+        margin-bottom: 10px;
+        width: 80%;
+    }
+    
+    .menuBtn {
+        background-color: rgb(255, 51, 0);
+        border: 2px solid white;
+        color: white;
+        border-radius: 10px;
+        margin-top: 100px;
+        padding: 20px 40px;
+        font-size: 20px;
+        font-weight: 500;
+        cursor: pointer;
+    }
+
+    .menuBtn:hover {
+        opacity: 0.7;
+    }
+    
+    .footer {
+        background-image: url('images/dragon.jpg');
+        background-repeat: no-repeat;
+        background-size: 150%;
+        margin-top: 200px;
+        width: 100%;
+        height: 800px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        opacity: 0.9;
+    }
+    
+    .footer .title {
+        font-size: 75px;
+        margin: 30px 0;
+    }
+    
+    .footer .description {
+        font-size: 20px;
+        width: 700px;
+        text-align: center;
+    }
+    
+    .contactUsBtn {
+        border: 3px solid black;
+        border-radius: 10px;
+        margin-top: 70px;
+        padding: 20px 40px;
+        font-size: 20px;
+        font-weight: 600;
+        font-style: italic;
+        color: black;
+        background-color: white;
+    }
+    
+    .footerNavigationBar {
+        padding: 50px 150px;
+        background-color: white;
+    }
+    
+    .footerNavigationBar .topNavBar, 
+    .footerNavigationBar .bottomNavBar {
+        display: flex;
+    }
+    
+    .footerNavigationBar .line {
+        border-bottom: 1px solid black;
+    }
+    
+    .footerNavigationBar .topNavBar .navigation-right, 
+    .footerNavigationBar .bottomNavBar .navigation-right,
+    .footerNavigationBar .topNavBar .navigation-left, 
+    .footerNavigationBar .bottomNavBar .navigation-left {
+        width: 50%;
+        display: flex;
+        align-items: center;
+    }
+    
+    .footerNavigationBar .topNavBar .navigation-right ul, 
+    .footerNavigationBar .bottomNavBar .navigation-right ul {
+        display: flex;
+        align-items: center;
+        width: 100%;
+    }
+    
+    .footerNavigationBar .topNavBar ul li, 
+    .footerNavigationBar .bottomNavBar ul li {
+        list-style: none;
+        font-size: 16px;
+    }
+    
+    .footerNavigationBar .topNavBar .navigation-right ul {
+        justify-content: space-between;
+        margin-bottom: 50px;
+    }
+    
+    .footerNavigationBar .topNavBar .navigation-left {
+        margin-bottom: 50px;
+    }
+    
+    .footerNavigationBar .topNavBar .navigation-left .title {
+        font-size: 30px;
+        margin-left: 20px;
+    }
+    
+    .footerNavigationBar .bottomNavBar .navigation-right ul {
+        justify-content: space-evenly;
+        margin-top: 50px;
+    }
+    
+    .footerNavigationBar .bottomNavBar .navigation-left {
+        margin-top: 50px;
+    }
+    
+    .footerNavigationBar .bottomNavBar {
+        margin-bottom: 100px;
+    }
+    
+    .footerNavigationBar .bottomNavBar .navigation-left .copyright {
+        font-size: 20px;
+    }
+
+
+
+
+
+
+}
+
+
+@media screen and (min-width: 1551px) {
+    .navigation-toggle, .toggleContainer {
+        display: none;
+    }
+
+    .navbar {
+        display: flex;
+        align-items: center;
+        padding: 10px 100px;
+        margin-bottom: 30px;
+        background-color: white;
+        position: sticky;
+        top: 0;
+        z-index: 2;
+        box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.1);
+    }
+    
+    .navbar .navigation-left {
+        width: 40%;
+        display: flex;
+        align-items: center;
+    }
+    
+    .navbar .navigation-left p {
+        font-size: 25px;
+        margin: 5px 20px;
+    }
+    
+    .navbar .navigation-right {
+        width: 60%;
+    }
+    
+    .navbar .navigation-right ul {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 400;
+        font-style: italic;
+    }
+    
+    .navbar ul li {
+        list-style: none;
+        margin: 5px 30px;
+        font-size: 20px;
+    }
+    
+    .navbar .contact-us {
+        border: 2px solid orange;
+        padding: 5px 10px;
+        color: orange;
+        border-radius: 5px;
+    }
+    
+    .container {
+        display: flex;
+        font-family: 'Ravi Prakash', cursive;
+    }
+    
+    .header {
+        width: 55%;
+        margin-left: 100px;
+        margin-top: 150px;
+    }
+    
+    .header .title {
+        width: 100%;
+        font-size: 100px;
+        line-height: 70px;
+    }
+    
+    .header .description {
+        width: 60%;
+        font-size: 17px;
+        line-height: 21px;
+        font-family: 'Roboto', sans-serif;
+        opacity: 0.8;
+        margin-top: 35px;
+        margin-bottom: 100px;
+    }
+    
+    .containerBtn {
+        display: flex;
+    }
+    
+    .container button {
+        border: none;
+        background-color: transparent;
+    }
+    
+    .reservation {
+        position: relative;
+    }
+    
+    .brush {
+        width: 200px;
+    }
+
+    .circle {
+        width: 45%;
+    }
+    
+    .reservationBtn {
+        font-size: 20px;
+        position: absolute;
+        left: 45px;
+        top: 23px;
+        font-style: italic;
+    }
+
+    .reservationBtn:hover {
+        color: white;
+    }
+    
+    .howBtn {
+        font-size: 18px;
+    }
+    
+    .bi-play-circle-fill {
+        font-size: 40px;
+        margin-left: 75px;
+        margin-right: 10px;
+    }
+    
+    .howBtn:hover {
+        font-size: 18px;
+        color: red;
+    }
+    
+    .bi-play-circle-fill:hover {
+        color: red;
+    }
+    
+    .aboutUs {
+        margin-top: 150px;
+        display: flex;
+    }
+    
+    .aboutUsImages {
+        position: relative;
+    }
+    
+    .aboutUsImages .salmonTexture {
+        width: 350px;
+        height: 600px;
+        margin-left: 150px;
+        border-radius: 15px;
+    }
+    
+    .aboutUsImages .chickenKatsu {
+        position: absolute;
+        width: 500px;
+        top: 100px;
+        left: 150px;
+    }
+    
+    .aboutUsDescription {
+        margin: 70px 150px 0 300px;
+    }
+    
+    .aboutUsDescription .title {
+        margin: 80px 0 50px 0;
+        font-family: 'Ravi Prakash', cursive;
+        font-size: 100px;
+        line-height: 70px;
+    }
+
+    @keyframes example {
+        0%   {opacity: 0;}
+        100% {opacity: 1;}
+    }
+    
+    .aboutUsDescription .description {
+        font-size: 19px;
+        line-height: 30px;
+    }
+    
+    .japanese {
+        color: orange;
+        font-size: 20px;
+        font-weight: 500;
+        font-family: 'Roboto', sans-serif;
+    }
+    
+    .sushiMenu {
+        margin-top: 150px;
+        display: flex;
+    }
+    
+    .sushiMenuImages {
+        position: relative;
+        margin-right: 150px;
+    }
+    
+    .sushiMenuImages .salmonTexture {
+        width: 350px;
+        height: 600px;
+        border-radius: 15px;
+    }
+    
+    .sushiMenuImages .udon {
+        position: absolute;
+        width: 500px;
+        top: 100px;
+        right: 15px;
+    }
+    
+    .sushiMenuDescription {
+        margin: 70px 300px 0 150px;
+    }
+    
+    .sushiMenuDescription .title {
+        margin: 80px 0 50px 0;
+        font-family: 'Ravi Prakash', cursive;
+        font-size: 100px;
+        line-height: 70px;
+    }
+    
+    .sushiMenuDescription .description {
+        font-size: 19px;
+        line-height: 30px;
+    }
+    
+    .categories .japanese, .categories .title{
+        text-align: center;
+    }
+    
+    .categories .japanese {
+        margin-top: 100px;
+    }
+    
+    .categories .title {
+        font-size: 80px;
+        font-family: 'Ravi Prakash', cursive;
+    }
+    
+    .categories-menu {
+        display: flex;
+        margin: 0 7%;
+    }
+    
+    .menu {
+        min-width: 150px;
+    }
+
+    .menu ul li {
+        list-style: none;
+        font-size: 25px;
+        margin-top: 50px;
+    }
+    
+    .menu ul li:hover {
+        color: orange;
+        cursor: pointer;
+    }
+    
+    .menuContainer {
+        margin-left: 12%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .menu-container {
+        margin-top: 50px;
+        display: grid;
+        gap: 60px;
+        row-gap: 100px;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    
+    .foodContainer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 330px;
+        height: 80px;
+        background-color: rgb(255, 98, 0);
+        border-radius: 10px;
+    }
+    
+    .menuBorder {
+        width: 300px;
+        height: 110px;
+        background-image: url('images/Ramen\ Wallpaper.jpg');
+        background-position: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .menuBorder p {
+        color: black;
+        background-color: white;
+        padding: 2px 5px;
+        font-size: 20px;
+        font-weight: 600;
+    }
+
+    .dish {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: rgb(248, 248, 248);
+        margin: 0 15px;
+        max-width: 300px;
+    }
+
+    .dish:hover {
+        background-color: white;
+        border-radius: 30px;
+    }
+    
+    .dish p {
+        font-size: 25px;
+        font-weight: 500;
+    }
+    
+    .dish .price {
+        padding-bottom: 50px;
+        color: orange;
+    }
+    
+    .dish .dishName {
+        padding-bottom: 10px;
+    }
+    
+    .dish img {
+        margin-top: 50px;
+        margin-bottom: 10px;
+        width: 80%;
+    }
+    
+    .menuBtn {
+        background-color: rgb(255, 51, 0);
+        border: 2px solid white;
+        color: white;
+        border-radius: 10px;
+        margin-top: 100px;
+        padding: 20px 40px;
+        font-size: 20px;
+        font-weight: 500;
+        cursor: pointer;
+    }
+
+    .menuBtn:hover {
+        opacity: 0.7;
+    }
+    
+    .footer {
+        background-image: url('images/dragon.jpg');
+        background-repeat: no-repeat;
+        background-size: 100%;
+        background-attachment: fixed;
+        margin-top: 300px;
+        width: 100%;
+        height: 800px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        opacity: 0.9;
+    }
+    
+    .footer .title {
+        font-size: 75px;
+        margin: 30px 0;
+    }
+    
+    .footer .description {
+        font-size: 20px;
+        width: 700px;
+        text-align: center;
+    }
+    
+    .contactUsBtn {
+        border: 3px solid black;
+        border-radius: 10px;
+        margin-top: 70px;
+        padding: 20px 40px;
+        font-size: 20px;
+        font-weight: 600;
+        font-style: italic;
+        color: black;
+        background-color: white;
+    }
+    
+    .footerNavigationBar {
+        padding: 50px 250px;
+        background-color: white;
+    }
+    
+    .footerNavigationBar .topNavBar, 
+    .footerNavigationBar .bottomNavBar {
+        display: flex;
+    }
+    
+    .footerNavigationBar .line {
+        border-bottom: 1px solid black;
+    }
+    
+    .footerNavigationBar .topNavBar .navigation-right, 
+    .footerNavigationBar .bottomNavBar .navigation-right,
+    .footerNavigationBar .topNavBar .navigation-left, 
+    .footerNavigationBar .bottomNavBar .navigation-left {
+        width: 50%;
+        display: flex;
+        align-items: center;
+    }
+    
+    .footerNavigationBar .topNavBar .navigation-right ul, 
+    .footerNavigationBar .bottomNavBar .navigation-right ul {
+        display: flex;
+        align-items: center;
+        width: 100%;
+    }
+    
+    .footerNavigationBar .topNavBar ul li, 
+    .footerNavigationBar .bottomNavBar ul li {
+        list-style: none;
+        font-size: 20px;
+    }
+    
+    .footerNavigationBar .topNavBar .navigation-right ul {
+        justify-content: space-between;
+        margin-bottom: 50px;
+    }
+    
+    .footerNavigationBar .topNavBar .navigation-left {
+        margin-bottom: 50px;
+    }
+    
+    .footerNavigationBar .topNavBar .navigation-left .title {
+        font-size: 45px;
+        margin-left: 30px;
+    }
+    
+    .footerNavigationBar .bottomNavBar .navigation-right ul {
+        justify-content: space-evenly;
+        margin-top: 50px;
+    }
+    
+    .footerNavigationBar .bottomNavBar .navigation-left {
+        margin-top: 50px;
+    }
+    
+    .footerNavigationBar .bottomNavBar {
+        margin-bottom: 100px;
+    }
+    
+    .footerNavigationBar .bottomNavBar .navigation-left .copyright {
+        font-size: 20px;
+    }
+
+
+
+}
