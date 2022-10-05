@@ -33,6 +33,10 @@ a:visited {
 }
 
 @media screen and (max-width: 670px) {
+    .main-container {
+        width: 100%;
+    }
+    
     .navbar {
         display: flex;
         padding: 0px 30px;
