@@ -9,7 +9,6 @@
 body {
     background-color: rgb(245, 245, 245);
     font-family: 'Roboto', sans-serif;
-    overflow-x: hidden;
 }
 
 a:active {
@@ -36,7 +35,7 @@ a:visited {
     .main-container {
         width: 100%;
     }
-    
+
     .navbar {
         display: flex;
         padding: 0px 30px;
@@ -295,7 +294,7 @@ a:visited {
     }
 
     .menu {
-        width: 800px;
+        width: 100%;
     }
     
     .menu ul {
